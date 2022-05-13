@@ -4,12 +4,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Roboto Slab';
+    font-style: normal;
 }
 
 .navbar {
     /* Navbar Main Container */
-    background: #131313;
+    background: #64B5BD;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -34,9 +35,6 @@
 
 #navbar__logo {
     /* navbar logo css */
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -45,12 +43,12 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+
 }
 
-.fa-gem{
+#navbar__logo img{
     /* navbar logo item */
-    margin-right: 0.5rem;
+    height: 75%;
 
 }
 
@@ -69,7 +67,7 @@
 
 .navbar__links {
     /* Links inside navbar */
-    color: #fff;
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,12 +106,16 @@
 
 .navbar__links:hover {
     /* navbar  links hover attribute */
-    color: #f77062;
+    color: #fff;
     transition: all 0.3s ease;
 }
 
+
 @media screen and (max-width: 968px) {
     /* Media Query for mobile devices  */
+    .navbar {
+        background-color: #AC9C2C;
+    }
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -136,7 +138,7 @@
         z-index: -1;
     }
     .navbar__menu.active {
-        background-color: #131313;
+        background-color: #64B5BD;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -153,7 +155,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background: #000;
     }
     .navbar__item {
         width: 100%;
@@ -198,4 +200,77 @@
         transform: translateY(-8px) rotate(-45deg);
 
     }
+   
 } 
+
+/* Hero Section */
+.main {
+    display: flex;
+    background: #fff;
+    
+}
+
+.main__container{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    background-image: url(../public/home_banner.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 70% 100%;;
+    z-index: 1;
+    
+}
+.main__content {
+    display: flex;
+    z-index: 2;
+    margin-left: 300px;
+    flex-direction: column;
+    background-color: #e2e2e2;
+    height: 80%;
+    width: 40%;
+    padding: 3% 10% 10% 10%;
+}
+
+.banner__title{
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 84px;
+}
+
+.banner__subtitle {
+    margin-top: 1rem;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.banner__subtitle span {
+    color: #e6a271;
+}
+.banner__link {
+    margin-top: 6rem;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+}
+.banner__link:hover {
+    text-decoration: underline;
+}
+
+.services {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    
+}
