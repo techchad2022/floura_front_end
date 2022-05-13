@@ -231,8 +231,10 @@
     flex-direction: column;
     background-color: #e2e2e2;
     height: 80%;
-    width: 40%;
+    width: 35%;
     padding: 3% 10% 10% 10%;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .banner__title{
@@ -270,7 +272,116 @@
 
 .services {
     display: flex;
-    margin-top: 1rem;
-    justify-content: center;
+    flex-direction: column;
+    height: 1204px;
+    width: 100%;
+    justify-content: flex-start;    
+    background-color: #e2e2e2;
+}
+.services h1 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-left: 20%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 63px;
+}
+
+.services__portfolio_left{
+    display: flex;
+    align-self: flex-start;
+    background-color: #fff;
+    width: 70%;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.fabric {
+    height: 90%;
+    padding-left: 25%;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
     
+}
+.texts h2 {
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.texts p {
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.portfolio_end_img {
+    height: 80%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.services__portfolio_right {
+    display: flex;
+    align-self: flex-end;
+    background-color: #fff;
+    width: 70%;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.services__portfolio_right .fabric {
+    margin: 0;
+    padding: 0;
+}
+.services__more {
+    text-decoration: none;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 150%;
+    align-self: flex-end;
+    margin-right: 25%;
+/* identical to box height, or 54px */
+
+color: #000000;
+}
+
+.services__more:hover {
+    text-decoration: underline;
+}
+
+.recent__press {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.recent__press_inside{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.recent__press_inside h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+
+
 }
