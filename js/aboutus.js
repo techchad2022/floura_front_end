@@ -22,6 +22,8 @@ for(var i=0; i <= 5; i++) {
     aboutusInfo.append(p)
 
 }
+
+// Inserting images to areas of involvement.
 areas.forEach((item,index)=>{
     const outerDiv = document.createElement('div');
     const textBlock = document.createElement('div');
