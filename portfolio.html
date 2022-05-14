@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floura | Global Investment Firm</title>
     <!-- custom (main) css -->
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" />
 </head>
@@ -17,7 +17,7 @@
     <nav class="navbar">
         <!-- Navbar Logo -->
         <div class="navbar__container">
-            <a href="/" id="navbar__logo"><img src="public/floura_logo.svg" /> </a>
+            <a href="index.html" id="navbar__logo"><img src="public/floura_logo.svg" /> </a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -47,66 +47,35 @@
         <div class="main__container">
                 <div class="main__content">
                         
-                                <h1 class="banner__title">Trust Empathy Innovation</h1>
-                                <h2 class="banner__subtitle">Our <span>innovation</span> is your <span>reality</span>.</h2>
-                                <a href="/" class="banner__link">About Us &#8594</a>                       
+                                <h1 class="banner__title">"Build a <span>door</span> if opportunity doesn't come <span>knocking."</span></h1>
+                                <p href="/" class="banner__subtitle">Milton Berle</p>                       
                     </div>
                 </div>
         </div>
     </div>
-      <!-- Hero Section Ending -->
-      <!-- Services Section -->
-      <div class="services">
-          <h1>Featured Portfolio</h1>
-          <div class="services__portfolio_left">
-              <img src="public/fabric_logo.png" alt="" class="fabric" />
-              <div class="texts">
-                  <h2> Fabriq is here to save the environment and</h2>
-                  <p>Made with raw organic materials harvested by the local farmers of Western New York, you will feel fresh and pretty.</p>
-              </div>
-              <img src="public/fabric.png" class="portfolio_end_img"/>
-          </div>
-          <div class="services__portfolio_right">
-              <img src="public/fabric.png" class="portfolio_end_img"/>
-            <img src="public/fabric_logo.png" alt="" class="fabric" />
-            <div class="texts">
-                <h2> Fabriq is here to save the environment and</h2>
-                <p>Made with raw organic materials harvested by the local farmers of Western New York, you will feel fresh and pretty.</p>
-            </div>
-            
+    <!-- Hero Section Ending -->
+    <!-- Options Section Start-->
+    <div class="portfolio__selection">
+        <div class="portfolio__selection_inside">
+            <select name="category" id="" class="portfolio__category">
+                <option value="category">category</option>
+            </select>
+            <select name="location" id="" class="location">
+                <option value="location">location</option>
+            </select>
+            <span><i class="fa fa-search" aria-hidden="true"></i><input placeholder="Search by keyword" id="search" /></span>
         </div>
-        <a href="/" class="services__more">See More  &#8594</a>
-      </div>
-      
-            <!-- Services Section End-->
-            <!-- Recent Press Section -->
-            <div class="recent__press">
-                <div class="recent__press_inside">
-                    <h2 class="recent__press_title">
-                        | Recent Press
-                    </h2>
-                    <div class="recent__press_cardholder">
-                        <div class="card">
-                            <img src="public/card_photo.png" alt="Avatar" style="width:100%">
-                            <div class="container">
-                              <h4><b>Floura Partner with Zorp</b></h4>
-                              <p>NEWS</p>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <img src="public/card_photo.png" alt="Avatar" style="width:100%">
-                            <div class="container">
-                              <h4><b>Floura Partner with Zorp</b></h4>
-                              <p>BLOG</p>
-                            </div>
-                          </div> 
-                    </div>
-                </div>
-            </div>
-            <br />
-            <br />
-            <!-- Footer Section -->
-    <footer class="footer__section">
+    </div>
+    <!-- Options Section End-->
+    <!-- images section -->
+    <div class="portfolio__images_outside">
+        <div class="portfolio__images">
+
+        </div>
+    </div>
+    <!-- Images Section End-->
+     <!-- Footer Section -->
+     <footer class="footer__section">
         <div class="footer">
             <div class="footer__first">
                 <img src="public/floura_logo.svg" alt="brand-logo" />
@@ -142,7 +111,5 @@
         </div>
     </footer>
     <!-- Featured Portfolio -->
-    <script src="js/script.js" > </script>
-</body>
-
-</html>
+    <script src="js/portfolio.js" > </script>
+    </body>
