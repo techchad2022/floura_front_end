@@ -1,0 +1,30 @@
+.DivOuterContainer{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.contact__left{
+    display: flex;
+    width: 40%;
+    margin: 1rem 0 1rem 0;
+    background: #f3f3f4;
+    height: 48vh;
+    justify-content: flex-end;
+    border-radius: 8px;
+}
+
+.contact__left h3{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 84px;
+    margin-left: 10rem;
+}
+
+.contact__right{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
