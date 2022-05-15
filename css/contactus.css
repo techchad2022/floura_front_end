@@ -1,16 +1,30 @@
+* {
+    /* body */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+}
 .DivOuterContainer{
     display: flex;
+    width: 100%;
+    max-width: 100%;
     flex-wrap: wrap;
+    margin: 4rem 0 4rem 0;
+    align-items: center;
     
 }
 
 .contact__left{
     display: flex;
     width: 40%;
-    margin: 1rem 0 1rem 0;
+    flex-wrap: wrap;
+    margin: 1rem 2rem 1rem 0;
     background: #f3f3f4;
-    height: 48vh;
+    height: 20rem;
     justify-content: flex-end;
+    align-items: center;
     border-radius: 8px;
 }
 
@@ -20,11 +34,125 @@
     font-weight: 300;
     font-size: 64px;
     line-height: 84px;
-    margin-left: 10rem;
+    margin-left: 40%;
 }
 
-.contact__right{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+
+.grid-container{
+    display: grid;
+    margin-left: 10rem;
+    grid-template-columns: repeat(2,200px);
+    grid-row-gap: 2rem;
+    grid-template-areas: 
+    "area1 area2"
+    "area3 area4"
+    "message message"
+    "area5 area6";
+}
+
+
+.grid-item1{
+    grid-area: area1;
+}
+.grid-item2{
+    grid-area: area2;
+}
+.grid-item3{
+    grid-area: area3;
+}
+.grid-item4{
+    grid-area: area4;
+}
+.grid-item5{
+    grid-area: message;
+}
+.grid-item6{
+    grid-area: area5;
+    
+}
+.grid-item textarea{
+  width: 100%;
+  height: 250px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  background-color: #e2e2e2;
+  border-radius: 4px;
+  resize: none;
+}
+
+.grid-item6 button{
+    display: block;
+  width: 100%;
+  border: none;
+  background-color: #f3f3f4;
+  color: #ed7621;
+  padding: 14px 28px;
+  
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.grid-item input{
+    background: #e2e2e2;
+    border: none;
+    height: 1.5rem;
+}
+.grid-item h3{
+    color: #ed7621;
+}
+
+@media screen and (max-width: 968px) {
+    .DivOuterContainer{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1rem;
+        
+    }
+    .contact__left{
+        padding: 0;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .contact__left h3{
+        margin: 0;
+        padding: 0;
+        justify-self: center;
+        text-align: center;
+        
+    }
+    .grid-container{
+        margin: 0 0 1rem 0;
+        padding: 0;
+        grid-template-columns: repeat(1,300px);
+        grid-template-areas: 
+        "area1"
+        "area2"
+        "area3"
+        "area4"
+        "message"
+        "area5";
+
+    }
+    .grid-item textarea,input{
+        width: 100%;
+    }
+    
+    .grid-item button{
+        width: 150px;
+    }
+    
+
 }
